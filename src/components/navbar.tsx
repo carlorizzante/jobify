@@ -1,5 +1,5 @@
-import { WithClassName } from '@/types';
 import { UserButton } from '@clerk/nextjs';
+import { WithClassName } from '../types/types';
 import { DropdownNav } from './dropdown-nav';
 import { ModeToggle } from './mode-toggle';
 

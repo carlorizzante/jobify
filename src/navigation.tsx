@@ -3,7 +3,7 @@ import {
   AreaChart,
   Layers,
 } from 'lucide-react';
-import { type NavLink } from './types';
+import { type NavLink } from './types/types';
 
 export const NAVIGATION: NavLink[] = [
   {

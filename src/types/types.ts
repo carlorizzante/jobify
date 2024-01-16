@@ -6,6 +6,6 @@ export type WithClassName = {
 
 export type NavLink = {
   href: string;
-  label: string;
   icon: React.ReactNode;
+  label: string;
 }
