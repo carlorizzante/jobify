@@ -1,6 +1,5 @@
-[
+export const seedData = [
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Software Engineer I",
     "company": "Agimba",
     "location": "Pacaembu",
@@ -9,7 +8,6 @@
     "createdAt": "2023-10-25T05:07:04Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Financial Advisor",
     "company": "Zoovu",
     "location": "Okulovka",
@@ -18,7 +16,6 @@
     "createdAt": "2023-06-07T12:30:28Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Quality Control Specialist",
     "company": "Yakijo",
     "location": "Starý Bohumín",
@@ -27,7 +24,6 @@
     "createdAt": "2023-03-10T23:18:53Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Senior Cost Accountant",
     "company": "Twimm",
     "location": "Norrköping",
@@ -36,7 +32,6 @@
     "createdAt": "2023-08-08T22:11:46Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Financial Analyst",
     "company": "Skinte",
     "location": "Hashimoto",
@@ -45,7 +40,6 @@
     "createdAt": "2024-01-03T17:41:36Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Marketing Assistant",
     "company": "Geba",
     "location": "Sokol’niki",
@@ -54,7 +48,6 @@
     "createdAt": "2023-12-21T15:02:45Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Director of Sales",
     "company": "Flashpoint",
     "location": "Drosáto",
@@ -63,7 +56,6 @@
     "createdAt": "2023-10-12T17:04:26Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Account Representative IV",
     "company": "Feedfire",
     "location": "Mae Lao",
@@ -72,7 +64,6 @@
     "createdAt": "2023-10-18T05:16:57Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Budget/Accounting Analyst III",
     "company": "Aimbu",
     "location": "Kotaagung",
@@ -81,7 +72,6 @@
     "createdAt": "2023-09-13T13:57:28Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Automation Specialist III",
     "company": "Mydeo",
     "location": "Wakimachi",
@@ -90,7 +80,6 @@
     "createdAt": "2023-11-06T12:11:47Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Quality Control Specialist",
     "company": "Dabjam",
     "location": "Pashkovskiy",
@@ -99,7 +88,6 @@
     "createdAt": "2023-02-12T20:29:23Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Structural Analysis Engineer",
     "company": "Vimbo",
     "location": "Amahusu",
@@ -108,7 +96,6 @@
     "createdAt": "2023-08-23T08:40:57Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "VP Product Management",
     "company": "Yodel",
     "location": "Sukawening",
@@ -117,7 +104,6 @@
     "createdAt": "2023-02-12T02:04:02Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Web Developer III",
     "company": "Chatterpoint",
     "location": "Foz do Iguaçu",
@@ -126,7 +112,6 @@
     "createdAt": "2023-01-19T03:40:29Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Administrative Assistant II",
     "company": "Meevee",
     "location": "Kotabaru Hilir",
@@ -135,7 +120,6 @@
     "createdAt": "2023-11-16T13:50:29Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Physical Therapy Assistant",
     "company": "Ainyx",
     "location": "Kosakowo",
@@ -144,7 +128,6 @@
     "createdAt": "2023-07-15T05:47:20Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Internal Auditor",
     "company": "Shufflester",
     "location": "Xunzhong",
@@ -153,7 +136,6 @@
     "createdAt": "2023-02-13T22:37:29Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Dental Hygienist",
     "company": "Aibox",
     "location": "Zhoukou",
@@ -162,7 +144,6 @@
     "createdAt": "2023-05-29T11:22:28Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Staff Scientist",
     "company": "Leenti",
     "location": "Sanhui",
@@ -171,7 +152,6 @@
     "createdAt": "2023-07-09T04:47:18Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Statistician IV",
     "company": "Yakijo",
     "location": "Rudnyy",
@@ -180,7 +160,6 @@
     "createdAt": "2023-12-24T11:03:38Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Developer I",
     "company": "Skiba",
     "location": "Hatu Buh",
@@ -189,7 +168,6 @@
     "createdAt": "2023-10-13T12:49:15Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Analog Circuit Design manager",
     "company": "Jazzy",
     "location": "Borås",
@@ -198,7 +176,6 @@
     "createdAt": "2023-06-10T11:19:00Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Compensation Analyst",
     "company": "Innotype",
     "location": "Bafoulabé",
@@ -207,7 +184,6 @@
     "createdAt": "2023-09-25T15:15:03Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Assistant Manager",
     "company": "Voonyx",
     "location": "Danderyd",
@@ -216,7 +192,6 @@
     "createdAt": "2023-08-09T04:51:55Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "VP Accounting",
     "company": "Demimbu",
     "location": "Borås",
@@ -225,7 +200,6 @@
     "createdAt": "2023-12-22T04:45:18Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Research Nurse",
     "company": "Eabox",
     "location": "Caoxi",
@@ -234,7 +208,6 @@
     "createdAt": "2023-01-18T07:58:45Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Structural Analysis Engineer",
     "company": "Tavu",
     "location": "Tanjungbatu",
@@ -243,7 +216,6 @@
     "createdAt": "2023-02-07T05:23:24Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Senior Quality Engineer",
     "company": "Thoughtworks",
     "location": "Larache",
@@ -252,7 +224,6 @@
     "createdAt": "2023-01-22T06:00:01Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Marketing Assistant",
     "company": "Nlounge",
     "location": "Shoushan",
@@ -261,7 +232,6 @@
     "createdAt": "2023-08-10T08:28:55Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Staff Accountant I",
     "company": "Dazzlesphere",
     "location": "El Bauga",
@@ -270,7 +240,6 @@
     "createdAt": "2023-11-18T11:32:57Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Assistant Professor",
     "company": "Skippad",
     "location": "Pagelaran",
@@ -279,7 +248,6 @@
     "createdAt": "2023-05-05T04:36:48Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "General Manager",
     "company": "Yombu",
     "location": "Itaqui",
@@ -288,7 +256,6 @@
     "createdAt": "2023-04-01T00:06:45Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Human Resources Assistant I",
     "company": "Quinu",
     "location": "Lumbac",
@@ -297,7 +264,6 @@
     "createdAt": "2023-05-10T16:15:10Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Quality Control Specialist",
     "company": "Quinu",
     "location": "Nankou",
@@ -306,7 +272,6 @@
     "createdAt": "2023-05-05T11:47:17Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Account Representative I",
     "company": "Flashpoint",
     "location": "Merke",
@@ -315,7 +280,6 @@
     "createdAt": "2023-04-08T07:35:24Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Associate Professor",
     "company": "Dynabox",
     "location": "Enskede",
@@ -324,7 +288,6 @@
     "createdAt": "2023-11-08T00:15:23Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Director of Sales",
     "company": "Flashspan",
     "location": "Montenegro",
@@ -333,7 +296,6 @@
     "createdAt": "2023-01-18T11:51:08Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Compensation Analyst",
     "company": "Gevee",
     "location": "Aba",
@@ -342,7 +304,6 @@
     "createdAt": "2023-11-26T12:42:00Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Recruiter",
     "company": "Brainbox",
     "location": "Jianyangping",
@@ -351,7 +312,6 @@
     "createdAt": "2023-11-28T22:56:51Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Legal Assistant",
     "company": "Oyoba",
     "location": "Sogod",
@@ -360,7 +320,6 @@
     "createdAt": "2023-11-14T13:23:25Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Structural Analysis Engineer",
     "company": "Jabberstorm",
     "location": "Lidköping",
@@ -369,7 +328,6 @@
     "createdAt": "2023-07-08T10:33:14Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Mechanical Systems Engineer",
     "company": "Vinte",
     "location": "Tshela",
@@ -378,7 +336,6 @@
     "createdAt": "2023-07-31T16:08:36Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Marketing Manager",
     "company": "Realmix",
     "location": "Yuanda",
@@ -387,7 +344,6 @@
     "createdAt": "2023-08-13T17:52:14Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Speech Pathologist",
     "company": "Yodoo",
     "location": "Jagong",
@@ -396,7 +352,6 @@
     "createdAt": "2023-02-26T09:07:24Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Operator",
     "company": "Twimbo",
     "location": "Zaïo",
@@ -405,7 +360,6 @@
     "createdAt": "2023-09-04T15:10:50Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Programmer Analyst III",
     "company": "Rhycero",
     "location": "Shumyachi",
@@ -414,7 +368,6 @@
     "createdAt": "2023-01-24T22:38:32Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Tax Accountant",
     "company": "Buzzshare",
     "location": "Nytva",
@@ -423,7 +376,6 @@
     "createdAt": "2023-08-10T19:41:45Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Media Manager II",
     "company": "Trilia",
     "location": "Nganane",
@@ -432,7 +384,6 @@
     "createdAt": "2023-11-04T01:09:25Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Actuary",
     "company": "Avamm",
     "location": "Tetebatu",
@@ -441,7 +392,6 @@
     "createdAt": "2023-01-30T18:39:33Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Help Desk Operator",
     "company": "Mybuzz",
     "location": "Pailin",
@@ -450,7 +400,6 @@
     "createdAt": "2023-06-04T12:30:34Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Help Desk Technician",
     "company": "Fatz",
     "location": "Guanajuato",
@@ -459,7 +408,6 @@
     "createdAt": "2023-09-03T17:30:53Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Product Engineer",
     "company": "Tagtune",
     "location": "Suren",
@@ -468,7 +416,6 @@
     "createdAt": "2023-05-02T08:25:52Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Environmental Specialist",
     "company": "Wikizz",
     "location": "Beixin",
@@ -477,7 +424,6 @@
     "createdAt": "2023-10-21T11:54:17Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Financial Analyst",
     "company": "Katz",
     "location": "Huesca",
@@ -486,7 +432,6 @@
     "createdAt": "2023-06-16T03:38:55Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Marketing Manager",
     "company": "Lazzy",
     "location": "Ban Thai Tan",
@@ -495,7 +440,6 @@
     "createdAt": "2023-06-12T15:25:28Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Technical Writer",
     "company": "Tagchat",
     "location": "Taramana",
@@ -504,7 +448,6 @@
     "createdAt": "2023-07-28T13:58:17Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Senior Editor",
     "company": "Quatz",
     "location": "La Rochelle",
@@ -513,7 +456,6 @@
     "createdAt": "2023-12-10T09:14:13Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Analog Circuit Design manager",
     "company": "Topiclounge",
     "location": "Oslo",
@@ -522,7 +464,6 @@
     "createdAt": "2023-02-06T22:02:12Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Safety Technician III",
     "company": "Eimbee",
     "location": "Sviadnov",
@@ -531,7 +472,6 @@
     "createdAt": "2023-09-28T18:34:13Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Sales Associate",
     "company": "Dabtype",
     "location": "Long Hồ",
@@ -540,7 +480,6 @@
     "createdAt": "2023-03-02T07:47:46Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Librarian",
     "company": "Yambee",
     "location": "Buenlag",
@@ -549,7 +488,6 @@
     "createdAt": "2024-01-09T23:02:37Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Analog Circuit Design manager",
     "company": "DabZ",
     "location": "Shuguang",
@@ -558,7 +496,6 @@
     "createdAt": "2023-07-06T09:45:43Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Structural Analysis Engineer",
     "company": "Dabshots",
     "location": "Ganhe",
@@ -567,7 +504,6 @@
     "createdAt": "2023-10-01T18:42:43Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Librarian",
     "company": "Trunyx",
     "location": "Gandekan",
@@ -576,7 +512,6 @@
     "createdAt": "2023-09-15T11:05:30Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Biostatistician IV",
     "company": "Edgewire",
     "location": "Nandulehe",
@@ -585,7 +520,6 @@
     "createdAt": "2023-10-13T09:10:07Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Environmental Specialist",
     "company": "Innojam",
     "location": "Strängnäs",
@@ -594,7 +528,6 @@
     "createdAt": "2023-04-24T11:26:02Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Programmer I",
     "company": "Aimbu",
     "location": "Fès",
@@ -603,7 +536,6 @@
     "createdAt": "2023-05-28T09:09:24Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "VP Product Management",
     "company": "Brainsphere",
     "location": "Guarabira",
@@ -612,7 +544,6 @@
     "createdAt": "2023-07-01T09:27:42Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Senior Financial Analyst",
     "company": "Dazzlesphere",
     "location": "Rožaje",
@@ -621,7 +552,6 @@
     "createdAt": "2023-07-17T12:32:44Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Teacher",
     "company": "Eamia",
     "location": "Shalamzār",
@@ -630,7 +560,6 @@
     "createdAt": "2023-03-14T23:08:21Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Nurse Practicioner",
     "company": "Babbleblab",
     "location": "Sbo’o",
@@ -639,7 +568,6 @@
     "createdAt": "2023-12-16T21:30:35Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Nurse",
     "company": "Twitterlist",
     "location": "Tsurib",
@@ -648,7 +576,6 @@
     "createdAt": "2023-04-16T01:49:57Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Administrative Officer",
     "company": "Feedmix",
     "location": "Malabugas",
@@ -657,7 +584,6 @@
     "createdAt": "2023-05-18T22:04:22Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Recruiting Manager",
     "company": "Trupe",
     "location": "Lipník nad Bečvou",
@@ -666,7 +592,6 @@
     "createdAt": "2023-08-12T03:35:58Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Assistant Media Planner",
     "company": "Dabfeed",
     "location": "Karsin",
@@ -675,7 +600,6 @@
     "createdAt": "2023-10-07T09:20:14Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Senior Cost Accountant",
     "company": "Shufflester",
     "location": "Bolyarovo",
@@ -684,7 +608,6 @@
     "createdAt": "2023-09-27T00:32:35Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Electrical Engineer",
     "company": "Mycat",
     "location": "Yartsevo",
@@ -693,7 +616,6 @@
     "createdAt": "2023-09-29T14:02:52Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Assistant Media Planner",
     "company": "Realcube",
     "location": "Shihua",
@@ -702,7 +624,6 @@
     "createdAt": "2023-03-12T07:35:58Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Occupational Therapist",
     "company": "Centimia",
     "location": "Amboise",
@@ -711,7 +632,6 @@
     "createdAt": "2023-08-01T03:06:09Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Assistant Media Planner",
     "company": "Blogtags",
     "location": "Fradelos",
@@ -720,7 +640,6 @@
     "createdAt": "2023-08-06T02:55:49Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Graphic Designer",
     "company": "Thoughtbeat",
     "location": "Taradale",
@@ -729,7 +648,6 @@
     "createdAt": "2023-05-17T07:13:54Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Registered Nurse",
     "company": "Twinte",
     "location": "Skene",
@@ -738,7 +656,6 @@
     "createdAt": "2023-03-23T14:18:01Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Budget/Accounting Analyst IV",
     "company": "Linklinks",
     "location": "Khuan Don",
@@ -747,7 +664,6 @@
     "createdAt": "2023-12-04T22:51:23Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Mechanical Systems Engineer",
     "company": "Twinder",
     "location": "Jiangdianzi",
@@ -756,7 +672,6 @@
     "createdAt": "2023-01-23T23:47:59Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Account Executive",
     "company": "Innotype",
     "location": "Luohuang",
@@ -765,7 +680,6 @@
     "createdAt": "2023-11-29T18:00:52Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Project Manager",
     "company": "Blogtag",
     "location": "Guay",
@@ -774,7 +688,6 @@
     "createdAt": "2023-08-14T15:54:41Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Research Nurse",
     "company": "Mycat",
     "location": "Hatogaya-honchō",
@@ -783,7 +696,6 @@
     "createdAt": "2024-01-04T23:39:53Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Web Developer II",
     "company": "Shufflester",
     "location": "Álimos",
@@ -792,7 +704,6 @@
     "createdAt": "2023-05-20T22:45:24Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Pharmacist",
     "company": "Oyoyo",
     "location": "Sampagar",
@@ -801,7 +712,6 @@
     "createdAt": "2023-08-25T06:14:25Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Data Coordinator",
     "company": "Skiptube",
     "location": "Geshan",
@@ -810,7 +720,6 @@
     "createdAt": "2023-04-19T00:06:21Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Human Resources Assistant IV",
     "company": "Youtags",
     "location": "Bilian",
@@ -819,7 +728,6 @@
     "createdAt": "2023-11-19T22:07:25Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Office Assistant IV",
     "company": "Voomm",
     "location": "Phetchaburi",
@@ -828,7 +736,6 @@
     "createdAt": "2023-07-03T21:04:14Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "VP Marketing",
     "company": "Jaxbean",
     "location": "Lapid",
@@ -837,7 +744,6 @@
     "createdAt": "2023-03-19T02:12:40Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Quality Control Specialist",
     "company": "Viva",
     "location": "Hacıqabul",
@@ -846,7 +752,6 @@
     "createdAt": "2023-05-09T21:14:50Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Senior Sales Associate",
     "company": "Realcube",
     "location": "Casisang",
@@ -855,7 +760,6 @@
     "createdAt": "2023-04-23T11:49:44Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Analog Circuit Design manager",
     "company": "Feedspan",
     "location": "Ma’an",
@@ -864,7 +768,6 @@
     "createdAt": "2023-07-10T23:58:04Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Recruiter",
     "company": "Youbridge",
     "location": "Gbadolite",
@@ -873,7 +776,6 @@
     "createdAt": "2023-12-07T10:40:34Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Paralegal",
     "company": "Agimba",
     "location": "Glória do Goitá",
@@ -882,7 +784,6 @@
     "createdAt": "2023-05-01T19:20:30Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Administrative Officer",
     "company": "Yabox",
     "location": "Yanmenkou",
@@ -891,7 +792,6 @@
     "createdAt": "2023-12-31T03:21:32Z"
   },
   {
-    "clerkId": "user_2b0DgMOC38wVGKQVx03xtSTMMhF",
     "position": "Human Resources Assistant II",
     "company": "Feedfish",
     "location": "Yepocapa",
