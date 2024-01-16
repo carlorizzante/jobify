@@ -12,7 +12,7 @@ import { Prisma } from '@prisma/client';
 import { authenticate } from './utils/authenticate';
 
 type FetchJobsProps = {
-  search?: string;
+  search?: string | null;
   status?: JobStatus | 'All';
   mode?: JobType;
   page?: number;
@@ -29,9 +29,9 @@ type ReturnType = FormState & {
 }
 
 export const fetchJobs = async ({
-  search = '',
-  status = undefined,
-  mode = undefined,
+  search,
+  status,
+  mode,
   page = 1,
   take = 10,
 }: FetchJobsProps): Promise<ReturnType> => {
@@ -39,7 +39,7 @@ export const fetchJobs = async ({
     const clerkId = authenticate();
     const where: Prisma.JobWhereInput = {};
     if (clerkId) where.clerkId = clerkId;
-    if (status !== 'All') where.status = status;
+    if (status && status !== 'All') where.status = status;
     if (search) where.OR = [
       { position: { contains: search } },
       { company: { contains: search } },
@@ -55,9 +55,9 @@ export const fetchJobs = async ({
       // take: take,
     });
 
-    console.log('----');
-    console.log('jobs', jobs)
-    console.log('----');
+    // console.log('----');
+    // console.log('jobs', jobs)
+    // console.log('----');
 
     if (jobs) {
       return {

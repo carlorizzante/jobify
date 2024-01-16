@@ -14,5 +14,4 @@ export type FormState = {
   success?: boolean | null;
   message?: string | null;
   error?: string | null;
-  // data: Tour | null;
 }
