@@ -10,15 +10,15 @@ import {
 } from '@/components';
 import { Form } from '@/components/ui/form';
 import {
-  createJobFormSchema,
-  CreateJobFormSchema,
+  IJobSchema,
+  JobSchema,
   JobStatus,
   JobType,
 } from '@/types';
 import { zodResolver } from '@hookform/resolvers/zod';
 import {
-  QueryClient,
   useMutation,
+  useQueryClient,
 } from '@tanstack/react-query';
 import { WithClassName } from '../types/types';
 import { useToast } from './ui/use-toast';
@@ -26,12 +26,12 @@ import { useToast } from './ui/use-toast';
 type CreateJobFormProps = WithClassName;
 
 export const CreateJobForm = ({ className }: CreateJobFormProps) => {
-  const queryClient = new QueryClient();
+  const queryClient = useQueryClient();
   const router = useRouter();
   const { toast } = useToast();
 
-  const form = useForm<CreateJobFormSchema>({
-    resolver: zodResolver(createJobFormSchema),
+  const form = useForm<IJobSchema>({
+    resolver: zodResolver(JobSchema),
     defaultValues: {
       company: '',
       location: '',
@@ -42,7 +42,7 @@ export const CreateJobForm = ({ className }: CreateJobFormProps) => {
   });
 
   const { mutate, isPending } = useMutation({
-    mutationFn: async (values: CreateJobFormSchema) => {
+    mutationFn: async (values: IJobSchema) => {
       const { success, message, error, data } = await createJob(values);
       if (success && message) {
         toast({
@@ -63,7 +63,7 @@ export const CreateJobForm = ({ className }: CreateJobFormProps) => {
     },
   });
 
-  const handleSubmit = (values: CreateJobFormSchema) => {
+  const handleSubmit = (values: IJobSchema) => {
     mutate(values);
   }
 
@@ -89,16 +89,16 @@ export const CreateJobForm = ({ className }: CreateJobFormProps) => {
           control={form.control}
           label="Status"
           name="status"
-          items={Object.entries(JobStatus)}
+          items={Object.values(JobStatus).map((value) => [value, value])}
         />
         <FormSelect
           control={form.control}
           label="Type"
           name="type"
           items={[
-            ['FullTime', 'Full-time'],
-            ['PartTime', 'Part-time'],
-            ['Internship', 'Internship'],
+            ['full-time', 'full-time'],
+            ['part-time', 'part-time'],
+            ['internship', 'internship'],
           ]}
         />
         <SubmitButton disabled={isPending} className="self-end uppercase">Create Job</SubmitButton>

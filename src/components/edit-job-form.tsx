@@ -12,8 +12,8 @@ import {
 import { Form } from '@/components/ui/form';
 import { useToast } from '@/components/ui/use-toast';
 import {
-  createJobFormSchema,
-  CreateJobFormSchema,
+  IJobSchema,
+  JobSchema,
   JobStatus,
   JobType,
   WithClassName,
@@ -21,15 +21,15 @@ import {
 } from '@/types';
 import { zodResolver } from '@hookform/resolvers/zod';
 import {
-  QueryClient,
   useMutation,
   useQuery,
+  useQueryClient,
 } from '@tanstack/react-query';
 
 type EditJobFormProps = WithClassName & WithId;
 
 export const EditJobForm = ({ className, id }: EditJobFormProps) => {
-  const queryClient = new QueryClient();
+  const queryClient = useQueryClient();
   const router = useRouter();
   const { toast } = useToast();
 
@@ -40,8 +40,8 @@ export const EditJobForm = ({ className, id }: EditJobFormProps) => {
 
   const job = data?.data
 
-  const form = useForm<CreateJobFormSchema>({
-    resolver: zodResolver(createJobFormSchema),
+  const form = useForm<IJobSchema>({
+    resolver: zodResolver(JobSchema),
     defaultValues: {
       company: job?.company,
       location: job?.location,
@@ -52,7 +52,7 @@ export const EditJobForm = ({ className, id }: EditJobFormProps) => {
   });
 
   const { mutate, isPending } = useMutation({
-    mutationFn: async (values: CreateJobFormSchema) => {
+    mutationFn: async (values: IJobSchema) => {
       const { success, message, error, data } = await updateJob({ id, values });
       if (success && message) {
         toast({
@@ -74,7 +74,7 @@ export const EditJobForm = ({ className, id }: EditJobFormProps) => {
     },
   });
 
-  const handleSubmit = (values: CreateJobFormSchema) => {
+  const handleSubmit = (values: IJobSchema) => {
     mutate(values);
   }
 
@@ -100,16 +100,16 @@ export const EditJobForm = ({ className, id }: EditJobFormProps) => {
           control={form.control}
           label="Status"
           name="status"
-          items={Object.entries(JobStatus)}
+          items={Object.values(JobStatus).map((value) => [value, value])}
         />
         <FormSelect
           control={form.control}
           label="Type"
           name="type"
           items={[
-            ['FullTime', 'Full-time'],
-            ['PartTime', 'Part-time'],
-            ['Internship', 'Internship'],
+            ['full-time', 'full-time'],
+            ['part-time', 'part-time'],
+            ['internship', 'internship'],
           ]}
         />
         <SubmitButton disabled={isPending} className="self-end uppercase">Save Job</SubmitButton>

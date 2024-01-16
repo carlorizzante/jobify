@@ -1,2 +1,2 @@
-export * from './create-job-form.schema';
+export * from './job.schema';
 export * from './types';

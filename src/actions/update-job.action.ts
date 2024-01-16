@@ -1,10 +1,10 @@
 'use server';
 
 import {
-  createJobFormSchema,
-  CreateJobFormSchema,
   FormState,
+  IJobSchema,
   Job,
+  JobSchema,
   WithId,
 } from '@/types';
 import { parseError } from '@/utils';
@@ -12,7 +12,7 @@ import prisma from '@/utils/prisma';
 import { authenticate } from './utils/authenticate';
 
 type UpdateJobProps = WithId & {
-  values: CreateJobFormSchema;
+  values: IJobSchema;
 }
 
 type ReturnTyoe = FormState & { data: Job | null; }
@@ -21,7 +21,7 @@ export const updateJob = async ({ id, values }: UpdateJobProps): Promise<ReturnT
   // await new Promise((resolve) => setTimeout(resolve, 2000));
   try {
     const clerkId = authenticate();
-    createJobFormSchema.parse(values);
+    JobSchema.parse(values);
     const job: Job = await prisma.job.update({
       where: { id, clerkId },
       data: values

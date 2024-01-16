@@ -6,10 +6,12 @@ import {
   JobStatus,
   JobType,
 } from '../src/types';
+import jobData from './seed-data.json'; // https://www.mockaroo.com/
 
-const prisma = new PrismaClient()
+const prisma = new PrismaClient();
 
-const jobData: Prisma.JobCreateInput[] = [
+
+const jobData2: Prisma.JobCreateInput[] = [
   {
     clerkId: 'user_2b0DgMOC38wVGKQVx03xtSTMMhF',
     position: 'Janitor',

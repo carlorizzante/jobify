@@ -13,18 +13,18 @@ export type Job = {
 }
 
 export enum JobStatus {
-  Declined = 'Declined',
-  Interview = 'Interview',
-  Pending = 'Pending',
+  Declined = 'declined',
+  Interview = 'interview',
+  Pending = 'pending',
 }
 
 export enum JobType {
-  FullTime = 'FullTime',
-  Internship = 'Internship',
-  PartTime = 'PartTime',
+  FullTime = 'full-time',
+  Internship = 'internship',
+  PartTime = 'part-time',
 }
 
-export const createJobFormSchema = z.object({
+export const JobSchema = z.object({
   position: z.string().min(2, {
     message: 'Position must be at least 2 characters'
   }),
@@ -38,4 +38,4 @@ export const createJobFormSchema = z.object({
   type: z.nativeEnum(JobType),
 });
 
-export type CreateJobFormSchema = z.infer<typeof createJobFormSchema>;
+export type IJobSchema = z.infer<typeof JobSchema>;
