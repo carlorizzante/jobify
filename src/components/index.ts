@@ -5,5 +5,7 @@ export { FormSelect } from './form-select';
 export { Headline } from './headline';
 export { ModeToggle } from './mode-toggle';
 export { Navbar } from './navbar';
+export { QueryClientProvider } from './query-client-provider';
 export { Sidebar } from './sidebar';
+export { SubmitButton } from './submit-button';
 export { ThemeProvider } from './theme-provider';

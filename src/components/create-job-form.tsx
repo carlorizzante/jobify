@@ -1,9 +1,12 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
+import { createJob } from '@/actions/create-job.action';
 import {
   FormInput,
   FormSelect,
+  SubmitButton,
 } from '@/components';
 import { Form } from '@/components/ui/form';
 import {
@@ -13,12 +16,20 @@ import {
   JobStatus,
 } from '@/types';
 import { zodResolver } from '@hookform/resolvers/zod';
+import {
+  QueryClient,
+  useMutation,
+} from '@tanstack/react-query';
 import { WithClassName } from '../types/types';
-import { Button } from './ui/button';
+import { useToast } from './ui/use-toast';
 
 type CreateJobFormProps = WithClassName;
 
 export const CreateJobForm = ({ className }: CreateJobFormProps) => {
+  const queryClient = new QueryClient();
+  const router = useRouter();
+  const { toast } = useToast();
+
   const form = useForm<CreateJobFormSchema>({
     resolver: zodResolver(createJobFormSchema),
     defaultValues: {
@@ -30,8 +41,32 @@ export const CreateJobForm = ({ className }: CreateJobFormProps) => {
     }
   });
 
+  const { mutate, isPending } = useMutation({
+    mutationFn: async (values: CreateJobFormSchema) => {
+      const { success, message, error, data } = await createJob(values);
+      if (success && message) {
+        toast({
+          title: 'Success!',
+          description: 'Job added to your job list!',
+        });
+        queryClient.invalidateQueries({ queryKey: ['jobs'] });
+        queryClient.invalidateQueries({ queryKey: ['stats'] });
+        queryClient.invalidateQueries({ queryKey: ['charts'] });
+        form.reset();
+        router.push('/jobs');
+      } else if (error) {
+        toast({
+          title: 'Error!',
+          description: 'Failed to add job.',
+        });
+      }
+    },
+  });
+
   const handleSubmit = (values: CreateJobFormSchema) => {
     console.log('handleSubmit', values);
+
+    mutate(values);
   }
 
   return (
@@ -68,7 +103,7 @@ export const CreateJobForm = ({ className }: CreateJobFormProps) => {
             ['Internship', 'Internship'],
           ]}
         />
-        <Button type="submit" className="self-end uppercase">Create Job</Button>
+        <SubmitButton disabled={isPending} className="self-end uppercase">Create Job</SubmitButton>
       </form>
     </Form>
   )

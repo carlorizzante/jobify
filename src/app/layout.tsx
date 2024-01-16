@@ -1,7 +1,11 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@/components';
+import {
+  QueryClientProvider,
+  ThemeProvider,
+} from '@/components';
+import { Toaster } from '@/components/ui/toaster';
 import { ClerkProvider } from '@clerk/nextjs';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -26,7 +30,10 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <QueryClientProvider>
+              {children}
+            </QueryClientProvider>
+            <Toaster />
           </ThemeProvider>
         </body>
       </html>
