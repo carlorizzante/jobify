@@ -4,20 +4,20 @@ import {
   createJobFormSchema,
   CreateJobFormSchema,
   FormState,
-  JobType,
+  Job,
 } from '@/types';
 import { parseError } from '@/utils';
 import prisma from '@/utils/prisma';
 import { authenticate } from './utils/authenticate';
 
-type ReturnTyoe = FormState & { data: JobType | null; }
+type ReturnTyoe = FormState & { data: Job | null; }
 
-export const createJob = async (values: CreateJobFormSchema): Promise<FormState & { data: JobType | null; }> => {
+export const createJob = async (values: CreateJobFormSchema): Promise<ReturnTyoe> => {
   await new Promise((resolve) => setTimeout(resolve, 2000));
   try {
     const clerkId = authenticate();
     createJobFormSchema.parse(values);
-    const job: JobType = await prisma.job.create({
+    const job: Job = await prisma.job.create({
       data: { ...values, clerkId }
     });
 

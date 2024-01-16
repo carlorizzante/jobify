@@ -1,12 +1,12 @@
 import * as z from 'zod';
 
-export type JobType = {
+export type Job = {
   clerkId: string;
   company: string;
   createdAt: Date;
   id: string;
   location: string;
-  mode: string;
+  type: string;
   position: string;
   status: string;
   updatedAt: Date;
@@ -18,7 +18,7 @@ export enum JobStatus {
   Pending = 'Pending',
 }
 
-export enum JobMode {
+export enum JobType {
   FullTime = 'FullTime',
   Internship = 'Internship',
   PartTime = 'PartTime',
@@ -35,7 +35,7 @@ export const createJobFormSchema = z.object({
     message: 'Location must be at least 2 characters'
   }),
   status: z.nativeEnum(JobStatus),
-  mode: z.nativeEnum(JobMode),
+  type: z.nativeEnum(JobType),
 });
 
 export type CreateJobFormSchema = z.infer<typeof createJobFormSchema>;

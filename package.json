@@ -9,8 +9,7 @@
     "lint": "next lint",
     "check-types": "tsc -p tsconfig.json",
     "prettier": "prettier **/*.{ts,tsx,html,json,md,gql} --write",
-    "prisma:init": "prisma migrate dev",
-    "prisma:init2": "dotenv -e .env.local -- prisma migrate dev",
+    "prisma:init": "dotenv -e .env.local -- prisma migrate dev",
     "prisma:studio": "prisma studio"
   },
   "prisma": {

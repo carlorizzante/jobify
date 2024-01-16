@@ -2,7 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
-import { createJob } from '@/actions/create-job.action';
+import { createJob } from '@/actions';
 import {
   FormInput,
   FormSelect,
@@ -12,8 +12,8 @@ import { Form } from '@/components/ui/form';
 import {
   createJobFormSchema,
   CreateJobFormSchema,
-  JobMode,
   JobStatus,
+  JobType,
 } from '@/types';
 import { zodResolver } from '@hookform/resolvers/zod';
 import {
@@ -37,7 +37,7 @@ export const CreateJobForm = ({ className }: CreateJobFormProps) => {
       location: '',
       position: '',
       status: JobStatus.Pending,
-      mode: JobMode.FullTime,
+      type: JobType.FullTime,
     }
   });
 
@@ -89,14 +89,14 @@ export const CreateJobForm = ({ className }: CreateJobFormProps) => {
         />
         <FormSelect
           control={form.control}
-          label="Job Status"
+          label="Status"
           name="status"
           items={Object.entries(JobStatus)}
         />
         <FormSelect
           control={form.control}
-          label="Job Mode"
-          name="mode"
+          label="Type"
+          name="type"
           items={[
             ['FullTime', 'Full-time'],
             ['PartTime', 'Part-time'],

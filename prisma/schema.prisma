@@ -16,7 +16,7 @@ model Job {
   clerkId   String
   company   String
   location  String
-  mode      String
+  type      String
   position  String
   status    String
   createdAt DateTime @default(now())
