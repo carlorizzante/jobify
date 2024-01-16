@@ -25,6 +25,7 @@ export const deleteJob = async (id: string): Promise<FormState> => {
     } else {
       throw new Error('Unable to delete job.');
     }
+
   } catch (e) {
     return {
       success: false,

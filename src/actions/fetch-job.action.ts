@@ -1,35 +1,34 @@
 'use server';
 
 import {
-  createJobFormSchema,
-  CreateJobFormSchema,
   FormState,
   Job,
+  WithId,
 } from '@/types';
 import { parseError } from '@/utils';
 import prisma from '@/utils/prisma';
 import { authenticate } from './utils/authenticate';
 
-type ReturnTyoe = FormState & { data: Job | null; }
+type ReturnType = FormState & {
+  data: Job | null;
+}
 
-export const createJob = async (values: CreateJobFormSchema): Promise<ReturnTyoe> => {
-  // await new Promise((resolve) => setTimeout(resolve, 2000));
+export const fetchJob = async ({ id }: WithId): Promise<ReturnType> => {
   try {
     const clerkId = authenticate();
-    createJobFormSchema.parse(values);
-    const job: Job = await prisma.job.create({
-      data: { ...values, clerkId }
+    const job = await prisma.job.findUnique({
+      where: { id, clerkId },
     });
 
     if (job) {
       return {
         success: true,
-        message: 'Job successfully created.',
+        message: 'Job fetched successfully.',
         error: null,
         data: job,
       }
     } else {
-      throw new Error('Failed to create job.')
+      throw new Error('Failed to retrieve job.');
     }
 
   } catch (e) {
@@ -40,4 +39,5 @@ export const createJob = async (values: CreateJobFormSchema): Promise<ReturnTyoe
       data: null,
     }
   }
+
 }

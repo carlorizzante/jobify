@@ -2,54 +2,65 @@
 
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
-import { createJob } from '@/actions';
+import { fetchJob } from '@/actions';
+import { updateJob } from '@/actions/update-job.action';
 import {
   FormInput,
   FormSelect,
   SubmitButton,
 } from '@/components';
 import { Form } from '@/components/ui/form';
+import { useToast } from '@/components/ui/use-toast';
 import {
   createJobFormSchema,
   CreateJobFormSchema,
   JobStatus,
   JobType,
+  WithClassName,
+  WithId,
 } from '@/types';
 import { zodResolver } from '@hookform/resolvers/zod';
 import {
   QueryClient,
   useMutation,
+  useQuery,
 } from '@tanstack/react-query';
-import { WithClassName } from '../types/types';
-import { useToast } from './ui/use-toast';
 
-type CreateJobFormProps = WithClassName;
+type EditJobFormProps = WithClassName & WithId;
 
-export const CreateJobForm = ({ className }: CreateJobFormProps) => {
+export const EditJobForm = ({ className, id }: EditJobFormProps) => {
   const queryClient = new QueryClient();
   const router = useRouter();
   const { toast } = useToast();
 
+  const { data } = useQuery({
+    queryKey: ['job', id],
+    queryFn: () => fetchJob({ id })
+  })
+
+  const job = data?.data
+
   const form = useForm<CreateJobFormSchema>({
     resolver: zodResolver(createJobFormSchema),
     defaultValues: {
-      company: '',
-      location: '',
-      position: '',
-      status: JobStatus.Pending,
-      type: JobType.FullTime,
+      company: job?.company,
+      location: job?.location,
+      position: job?.position,
+      status: (job?.status || JobStatus.Pending) as JobStatus,
+      type: (job?.type || JobType.FullTime) as JobType,
     }
   });
 
   const { mutate, isPending } = useMutation({
     mutationFn: async (values: CreateJobFormSchema) => {
-      const { success, message, error, data } = await createJob(values);
+      const { success, message, error, data } = await updateJob({ id, values });
       if (success && message) {
         toast({
           title: 'Success!',
           description: message,
         });
         queryClient.invalidateQueries({ queryKey: ['jobs'] });
+        queryClient.invalidateQueries({ queryKey: ['job', id] });
         queryClient.invalidateQueries({ queryKey: ['stats'] });
         queryClient.invalidateQueries({ queryKey: ['charts'] });
         form.reset();
@@ -101,7 +112,7 @@ export const CreateJobForm = ({ className }: CreateJobFormProps) => {
             ['Internship', 'Internship'],
           ]}
         />
-        <SubmitButton disabled={isPending} className="self-end uppercase">Create Job</SubmitButton>
+        <SubmitButton disabled={isPending} className="self-end uppercase">Save Job</SubmitButton>
       </form>
     </Form>
   )

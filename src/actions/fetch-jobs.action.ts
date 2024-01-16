@@ -69,7 +69,6 @@ export const fetchJobs = async ({
           totalPages: 0,
         },
       }
-
     } else {
       throw new Error('Failed to retrieve jobs from database.')
     }

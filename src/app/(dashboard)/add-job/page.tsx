@@ -13,7 +13,9 @@ export default async function AddJobsPage() {
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
       <Heading as="h1">Create Job</Heading>
-      <CreateJobForm className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-6 items-start w-fill" />
+      <CreateJobForm
+        className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"
+      />
     </HydrationBoundary>
   )
 }
