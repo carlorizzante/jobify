@@ -46,8 +46,6 @@ export const fetchJobs = async ({
       { location: { contains: search } },
     ];
 
-    console.log('where', where);
-
     const jobs: Job[] = await prisma.job.findMany({
       where,
       orderBy: { createdAt: 'desc' },

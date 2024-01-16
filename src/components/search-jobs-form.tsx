@@ -15,9 +15,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { JobStatus } from '@/types';
+import {
+  JobStatus,
+  WithClassName,
+} from '@/types';
 
-export const SearchJobsForm = () => {
+export const SearchJobsForm = ({ className }: WithClassName) => {
   const router = useRouter();
   const pathname = usePathname();
   const params = useSearchParams();
@@ -42,7 +45,7 @@ export const SearchJobsForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 rounded-lg bg-muted"
+      className={className}
     >
       <Input
         type="text"
