@@ -13,7 +13,7 @@ import { authenticate } from './utils/authenticate';
 
 type FetchJobsProps = {
   search?: string;
-  status?: JobStatus;
+  status?: JobStatus | 'All';
   mode?: JobType;
   page?: number;
   take?: number;
@@ -37,15 +37,16 @@ export const fetchJobs = async ({
 }: FetchJobsProps): Promise<ReturnType> => {
   try {
     const clerkId = authenticate();
-    const where: Prisma.JobWhereInput = { clerkId };
-
-    if (status) where.status = status;
-
+    const where: Prisma.JobWhereInput = {};
+    if (clerkId) where.clerkId = clerkId;
+    if (status !== 'All') where.status = status;
     if (search) where.OR = [
       { position: { contains: search } },
       { company: { contains: search } },
       { location: { contains: search } },
-    ]
+    ];
+
+    console.log('where', where);
 
     const jobs: Job[] = await prisma.job.findMany({
       where,
@@ -60,7 +61,7 @@ export const fetchJobs = async ({
 
     if (jobs) {
       return {
-        success: false,
+        success: true,
         message: '',
         error: null,
         data: {

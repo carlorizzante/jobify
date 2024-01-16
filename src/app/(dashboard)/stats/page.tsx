@@ -1,9 +1,9 @@
-import { Headline } from '@/components';
+import { Heading } from '@/components';
 
 export default async function StatsPage() {
   return (
     <>
-      <Headline as="h1">Stats</Headline>
+      <Heading as="h1">Stats</Heading>
     </>
   )
 }

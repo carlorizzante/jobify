@@ -14,7 +14,7 @@ export const Sidebar = ({ className = '' }: SidebarProps) => {
   return (
     <aside className={`px-8 py-4 h-full bg-muted ${className}`}>
       <Link href="/">
-        <Image src={Logo} alt="Jobify" className="mx-auto" />
+        <Image src={Logo} alt="Jobify" className="mx-auto" priority />
       </Link>
       <div className="flex flex-col gap-y-4 mt-20 p-4">
         {NAVIGATION.map((link) => (

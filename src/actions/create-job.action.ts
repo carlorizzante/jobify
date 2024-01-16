@@ -13,9 +13,10 @@ import { authenticate } from './utils/authenticate';
 type ReturnTyoe = FormState & { data: Job | null; }
 
 export const createJob = async (values: CreateJobFormSchema): Promise<ReturnTyoe> => {
-  await new Promise((resolve) => setTimeout(resolve, 2000));
+  // await new Promise((resolve) => setTimeout(resolve, 2000));
   try {
     const clerkId = authenticate();
+    console.log('clerkId', clerkId)
     createJobFormSchema.parse(values);
     const job: Job = await prisma.job.create({
       data: { ...values, clerkId }

@@ -3,11 +3,11 @@ import {
   WithClassName,
 } from '@/types';
 
-type HeadlineProps = WithChildren & WithClassName & {
+type HeadingProps = WithChildren & WithClassName & {
   as: 'h1' | 'h2' | 'h3' | 'h4'
 }
 
-const genStyle = (as: HeadlineProps['as']) => {
+const genStyle = (as: HeadingProps['as']) => {
   switch (as) {
     case 'h1':
       return 'text-4xl mb-12 font-bold';
@@ -22,6 +22,6 @@ const genStyle = (as: HeadlineProps['as']) => {
   }
 }
 
-export const Headline = ({ as: Tag, children, className = '' }: HeadlineProps) => (
+export const Heading = ({ as: Tag, children, className = '' }: HeadingProps) => (
   <Tag className={`${genStyle(Tag)} ${className}`}>{children}</Tag>
 )
