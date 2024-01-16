@@ -9,7 +9,7 @@ async function main() {
   console.log(`Start seeding ...`)
   for (const data of seedData) {
     const { id } = await prisma.job.create({ data: { ...data, clerkId } });
-    console.log(`Created tour with id: ${id}`);
+    console.log(`Created entry with id: ${id}`);
   }
   console.log(`Seeding finished.`)
 }
